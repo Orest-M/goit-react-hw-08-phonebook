@@ -21,8 +21,8 @@ const Contacts = ({ setFilteredArr }) => {
   return (
     <div>
       <ul onClick={deleteItem} className={css.contacts}>
-        {data.map(({ name, phone, id }) => (
-          <ContactsItem key={id} name={name} number={phone} id={id} />
+        {data.map(({ name, number, id }) => (
+          <ContactsItem key={id} name={name} number={number} id={id} />
         ))}
       </ul>
     </div>
